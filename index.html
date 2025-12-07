@@ -146,11 +146,20 @@
 </head>
 <body>
   <!-- Música local -->
-  <audio autoplay loop>
+  <audio id="musicaFondo" loop>
     <source src="audio/cancion.mp3" type="audio/mpeg">
     Tu navegador no soporta audio HTML5.
   </audio>
 
+  <script>
+    window.addEventListener('scroll', () => {
+      const audio = document.getElementById('musicaFondo');
+      if (audio && audio.paused) {
+        audio.play().catch(err => console.log("Reproducción bloqueada:", err));
+      }
+    }, { once: true });
+  </script>
+  
   <!-- Efecto wormhole -->
   <div class="wormhole"></div>
 
@@ -161,6 +170,7 @@
     <p>A veces la distancia nos hace tropezar y nos reta… y aun así, la idea de volver a estar juntos hace que todo el esfuerzo tenga sentido</p>
     <p>"Y aunque perder tus pasos, Sea parte de mi rutina, El suelo sonríe, Cada vez que tú caminas"</p>
     <p>A pesar de las divergencias en nuestra manera de ser, en un universo tan vasto, coincidir contigo sigue siendo mi coincidencia favorita</p>
+    <p>⬇⬇⬇⬇⬇⬇⬇</p>
     <div class="scroll-down">⬇ Baja para ver más ⬇</div>
   </div>
 
@@ -182,5 +192,6 @@
 </body>
 
 </html>
+
 
 
