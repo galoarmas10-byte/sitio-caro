@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Caro 💛</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0c0c0f;
+      color: #d8d3cf;
+      font-family: "Georgia", serif;
+    }
+
+    /* Intro */
+    .hero {
+      height: 100vh;
+      background: radial-gradient(circle at 30% 50%, #2a2a34 0%, #0c0c0f 80%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+      animation: fadeIn 2.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #f0e6dd;
+    }
+
+    .hero p {
+      max-width: 700px;
+      line-height: 1.6;
+      font-size: 1.2rem;
+      color: #c9c4be;
+      margin-top: 15px;
+    }
+
+    .separator {
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(to right, #4f4c52, #c9a085, #4f4c52);
+      margin: 25px auto;
+      border-radius: 10px;
+      opacity: 0.7;
+    }
+
+    /* Galería */
+    .gallery-section {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .gallery-title {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #e0d8d0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 15px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Música de fondo -->
+  <iframe 
+    width="0" 
+    height="0"
+    src="https://www.youtube.com/embed/em0MknB6wFo?autoplay=1&loop=1&playlist=em0MknB6wFo"
+    frameborder="0"
+    allow="autoplay"
+  ></iframe>
+
+  <!-- INTRO ROMÁNTICA -->
+  <div class="hero">
+    <h1>5 meses contigo, Caro 💛</h1>
+    <div class="separator"></div>
+
+    <p>
+      A veces la distancia se siente como un vacío enorme,  
+      pero incluso ahí, tu luz siempre encuentra la forma de llegar a mí.
+    </p>
+    <p>
+      Divergimos en numerosas cosas,
+      pero orbitamos el mismo centro: lo que sentimos.
+    </p>
+    <p>
+      Somos mundos distintos… y sin embargo, cuando te siento cerca, el universo deja de mirarnos como extraños, empieza a trazar puentes     	de luz entre nosotros y todo lo demás desaparece.
+    </p>
+    <p>
+      En un universo tan vasto, coincidir contigo sigue siendo mi milagro favorito.
+    </p>
+  </div>
+
+  <!-- GALERÍA -->
+  <div class="gallery-section">
+    <h2 class="gallery-title">Momentos que amo de nosotros</h2>
+
+    <div class="gallery">
+      <img src="img/foto1.jpg" alt="Foto 1">
+      <img src="img/foto2.jpg" alt="Foto 2">
+      <img src="img/foto3.jpg" alt="Foto 3">
+      <img src="img/foto4.jpg" alt="Foto 4">
+      <img src="img/foto5.jpg" alt="Foto 5">
+      <img src="img/foto6.jpg" alt="Foto 6">
+      <img src="img/foto7.jpg" alt="Foto 7">
+      <img src="img/foto8.jpg" alt="Foto 8">
+    </div>
+  </div>
+
+</body>
+</html>
